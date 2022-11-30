@@ -12,7 +12,7 @@ WORKDIR /clomonitor/clomonitor-linter
 RUN cargo build --release
 
 # Get OpenSSF scorecard binary
-FROM alpine:3.16 AS scorecard
+FROM alpine:3.17 AS scorecard
 WORKDIR /tmp
 RUN wget -O scorecard.tar.gz https://github.com/ossf/scorecard/releases/download/v4.7.0/scorecard_4.7.0_linux_amd64.tar.gz
 RUN tar xvfz scorecard.tar.gz
@@ -20,7 +20,7 @@ RUN chown root:root scorecard-linux-amd64
 RUN chmod 755 scorecard-linux-amd64
 
 # Final stage
-FROM alpine:3.16.2
+FROM alpine:3.17.0
 RUN addgroup -S clomonitor && adduser -S clomonitor -G clomonitor
 USER clomonitor
 WORKDIR /home/clomonitor
