@@ -3426,3 +3426,73 @@
       check_sets:
         - community
         - code
+- name: kueue
+  display_name: kueue
+  description: Kubernetes-native Job Queueing.
+  category: runtime
+  logo_url: https://raw.githubusercontent.com/kubernetes-sigs/kueue/main/site/static/images/logo.svg
+  devstats_url: https://kuberenetes.devstats.cncf.io/
+  accepted_at: "2022-04-12"
+  maturity: graduated
+  repositories:
+    - name: kueue
+      url: https://github.com/kubernetes-sigs/kueue
+      check_sets:
+        - community
+        - code
+- name: minikube
+  display_name: minikube
+  description: Run Kubernetes locally
+  category: orchestration
+  logo_url: https://raw.githubusercontent.com/kubernetes/minikube/master/images/logo/logo.png
+  devstats_url: https://kuberenetes.devstats.cncf.io/
+  maturity: graduated
+  accepted_at: "2016-04-16"
+  repositories:
+    - name: minikube
+      url: https://github.com/kubernetes/minikube
+      check_sets:
+        - code
+        - community
+- name: kompose
+  display_name: Kompose
+  description: Kompose is a tool to help users who are familiar with docker-compose move to Kubernetes. It takes a Docker Compose file and translates it into Kubernetes resources.
+  category: app definition
+  logo_url: https://raw.githubusercontent.com/kubernetes/kompose/main/docs/assets/images/logo.png
+  devstats_url: 
+  accepted_at: "2016-06-27"
+  maturity: graduated
+  repositories:
+    - name: kompose
+      url: https://github.com/kubernetes/kompose
+      check_sets:
+        - community
+        - code
+- name: karpenter
+  display_name: Karpenter
+  description: Karpenter is a Kubernetes Node Autoscaler built for flexibility, performance, and simplicity.
+  category: cluster orchestration and management
+  logo_url: https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.png
+  devstats_url: 
+  accepted_at: "2022-10-12"
+  maturity: graduated
+  repositories:
+    - name: kompose
+      url: https://github.com/kubernetes-sigs/karpenter
+      check_sets:
+        - community
+        - code
+- name: kube-state-metrics
+  display_name: Kube State Metrics
+  description: Add-on agent to generate and expose cluster-level metrics.
+  category: observability
+  logo_url: https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.png
+  devstats_url: 
+  accepted_at: "2016-05-06"
+  maturity: graduated
+  repositories:
+    - name: kube-state-metrics
+      url: https://github.com/kubernetes/kube-state-metrics
+      check_sets:
+        - community
+        - code
